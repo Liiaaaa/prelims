@@ -8,8 +8,8 @@ public class FractionList {
         FractionList myProgram = new FractionList();
         myProgram.run();
     }
-    public void run() {
 
+    public void run() {
         int myChoice = 0;
         Fraction fraction1 = retrieveFractionFromConsole(1);
         Fraction fraction2 = retrieveFractionFromConsole(2);
