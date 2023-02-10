@@ -82,6 +82,8 @@ public class Fraction {
     }
 
     private int computeGCD() {
+        // Get the largest between the numerator and denominator
+        //
         int dividend = this.numerator;
         int divisor = this.denominator;
         if (this.numerator < this.denominator) {
@@ -89,6 +91,9 @@ public class Fraction {
             divisor = this.numerator;
         }
 
+        // Determine GCD via continuous dividing until the remainder
+        // is zero. (See Euclidian principle/theory).
+        //
         while (true) {
             int remainder = dividend % divisor;
             if (remainder == 0)
@@ -98,6 +103,7 @@ public class Fraction {
             divisor = remainder;
 
         }
+
        return divisor;
     }
 }
