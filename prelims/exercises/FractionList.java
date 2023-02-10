@@ -21,7 +21,7 @@ public class FractionList {
             switch (myChoice) {
                 case 1:
                    fraction1 = retrieveFractionFromConsole(1);
-                    stall();
+                   stall();
                    break;
 
                 case 2:
